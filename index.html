@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Flipper ESP32-C5 — OTA mirror</title>
+<style>
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:#0b0d10;color:#e6e9ef;
+font:16px/1.65 -apple-system,"PingFang SC",sans-serif;padding:24px}
+main{width:min(640px,100%)}h1{font-size:21px;margin:0 0 6px}
+p{color:#8b95a5;font-size:14px}
+.card{border:1px solid #1e2530;background:#12161c;border-radius:14px;padding:16px 18px;margin:14px 0}
+code{background:#0b0f14;border:1px solid #1e2530;border-radius:6px;padding:1px 6px;font-size:13px}
+ul{margin:8px 0 0;padding-left:20px;color:#a9b4c4;font-size:14px}
+</style></head><body><main>
+<h1>Flipper ESP32-C5 固件 OTA 镜像</h1>
+<p>一个包：预加密固件 + DFU + 应用 · 设备端自动优选最快镜像</p>
+<div class="card"><b>设备内更新</b>
+<ul>
+<li><code>设置 → 固件更新 → 在线更新 (OTA)</code></li>
+<li>清单：<a href="version.txt">version.txt</a></li>
+</ul></div>
+<div class="card"><b>SD 卡更新（同一个包）</b>
+<ul>
+<li><code>&lt;ver&gt;.tar</code> 放到 <code>/ext/update/</code></li>
+<li>走 <code>从 SD 卡更新</code>，只覆盖 <code>apps/</code>，用户红外/抓包等数据不动</li>
+</ul></div>
+</main></body></html>
